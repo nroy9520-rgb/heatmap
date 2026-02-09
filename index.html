@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nifty 50 Heatmap</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div>
+          <p class="eyebrow">Nifty Market Pulse</p>
+          <h1>Nifty 50 Heatmap</h1>
+          <p class="subhead">Live-inspired snapshot of the top Nifty stocks by sector weight.</p>
+        </div>
+        <div class="legend">
+          <span class="legend-label">1D Change</span>
+          <div class="legend-bar">
+            <span class="legend-chip" data-level="-3">-3%</span>
+            <span class="legend-chip" data-level="-2">-2%</span>
+            <span class="legend-chip" data-level="-1">-1%</span>
+            <span class="legend-chip" data-level="0">0%</span>
+            <span class="legend-chip" data-level="1">+1%</span>
+            <span class="legend-chip" data-level="2">+2%</span>
+            <span class="legend-chip" data-level="3">+3%</span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="heatmap" id="heatmap"></section>
+      </main>
+
+      <footer class="footer">
+        <p>Heatmap colors reflect daily moves; tile size approximates index weight.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
